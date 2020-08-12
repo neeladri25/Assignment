@@ -26,18 +26,11 @@ class SavingsBank {
 	
 	public void checkSavings(int savings) {
 		if(getSavings()>=1000)
-		{
 			System.out.println("Congratulations! You have saved a good amount ");
-		}
-		
 		else if(getSavings()<1000 && getSavings()>=0) 
-		{
 			System.out.println("Insufficient saving!");
-		}
 		else
-		{
 			System.out.println("You are in debt");
-		}
 	}
 }
 
@@ -51,14 +44,11 @@ public class Savings {
 		int out = s.increment();
 		s.checkSavings(out);
 		if(out>=1000)
-		{
 			System.out.println("Your current savings are Rs "+out);
-		}
 		else if(out<1000 && out>=0)
 			System.out.println("Your current savings are Rs "+out);
 		else
 			System.out.println("Your current savings are Rs "+out);
-
 	}
 
 }
